@@ -8,7 +8,7 @@ export type SqlFunction =
     => Promise<SqlFunResult<T>>
 
 export type SqlFunResult<T extends RowDataPacket[]> = T & { affectedRows: number, insertId?: number }
-export type SqlParam = string | number
+export type SqlParam = string | number | Buffer
 
 /** from https://github.com/sidorares/node-mysql2/blob/HEAD/typings/mysql/lib/protocol/packets/RowDataPacket.d.ts */
 declare interface RowDataPacket {
