@@ -5,7 +5,8 @@ Example local test with `curl`
 
     curl -d '{"test": true}' --header 'content-type:application/json'  http://localhost:3000/api/callback
 
-Or, more practically, host it in Vercel easily to create an HTTPS endpoint to receive webhook tests.
+Or, more practically, **host it in Vercel** easily to create an HTTPS endpoint to receive webhook tests from web services,  
+that could then be **copy/paste** to your local environment.
 
 
 New database setup
